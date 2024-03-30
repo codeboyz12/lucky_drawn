@@ -31,18 +31,20 @@ async function fetchPrizes() {
     //     // Add more prizes as needed
     // ];
     let settings = {
-        "url": "https://9de1-171-96-137-31.ngrok-free.app/getAll",
-        "method": "GET",
-        "headers": {
-          "Content-Type": "application/json",
-          "Accept": "text/event-stream, text/plain"
-        },
-        "timeout": 0,
-      };
-      
-    await $.ajax(settings).done( function (response) {
-        prizes = response;
-      });
+      "url": "https://9de1-171-96-137-31.ngrok-free.app/getAll",
+      "method": "GET",
+      "headers": {
+        "ngrok-skip-browser-warning": "69420",
+        "Accept": "text/event-stream, text/plain"
+      },
+      "timeout": 0,
+  };
+  
+  await $.ajax(settings).done(function (response) {
+      prizes = response;
+      console.log(response);
+  });
+  
 }
 
 function updateCarousel() {
