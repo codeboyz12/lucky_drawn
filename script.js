@@ -31,7 +31,7 @@ async function fetchPrizes() {
     //     // Add more prizes as needed
     // ];
     let settings = {
-      "url": "https://9e78-171-96-155-237.ngrok-free.app/getAll",
+      "url": "https://a4f8-180-180-189-130.ngrok-free.app/getAll",
       "method": "GET",
       "headers": {
         "ngrok-skip-browser-warning": "69420",
@@ -98,7 +98,7 @@ function selectPrize() {
     const selectedPrize = prizes[Math.floor(Math.random() * Math.min(5, prizes.length))];
 
     let settings = {
-        "url": "https://9e78-171-96-155-237.ngrok-free.app/selectedPrize",
+        "url": "https://f913-2001-fb1-ee-f2e3-874-542-c772-f8eb.ngrok-free.app",
         "method": "POST",
         "timeout": 0,
         "headers": {
